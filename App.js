@@ -12,6 +12,7 @@ const form = document.querySelector('form');
 
 form.addEventListener( "submit", (e) => {
     e.preventDefault();
+    form.reset();
     Swal.fire(
         '¡ Bien hecho !',
         'Ahora estas suscrito a nuestras novedades!',
