@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: $bg-color;
+    color: $font-color;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: $font-color;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+span {
+    cursor: default;
+}
+
+button {
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+#swal2-title {
+    font-size: 2rem;
+}
+#swal2-html-container {
+    font-size: 1.5rem;
+}
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */

@@ -1,0 +1,250 @@
+footer {
+    display: flex;
+    height: 180px;
+    align-items: center;
+    padding-right: 140px;
+    background-image: url(../assets/Rectángulo155.svg);
+    border-bottom: 2px solid $li-underline;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    .logo {
+        width: 19%;
+        text-align: center;
+        flex-grow: 1;
+        padding-left: 56px;
+        padding-right: 72px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 3;
+        height: 100%;
+    }
+}
+
+.footer {
+
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 25px;
+        flex-grow: 1;
+
+        li {
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            max-width: 160px;
+            min-width: 50px;
+            text-align: center;
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+}
+
+
+.subscribe  {
+    padding-bottom: 24px;
+
+    > div{
+        display: flex;
+        align-items: center;
+    }
+
+    label {
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    input[type=email] {
+        height: 40px;
+        width: 250px;
+        padding-left: 22px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        color: $font-color;
+        background-color: $bg-color;
+    }
+
+    input[type=checkbox] {
+        width: 17px;
+        height: 17px;
+        margin: 0 10px 0 10px;
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-color: $font-color;
+        margin-right: 15px;
+    }
+
+    button {
+        margin-right: 50px;
+        width: 120px;
+        font-size: 1.4rem;
+        border: none;
+        color: $white;
+        background-color: $li-underline;
+    }
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    .icon {
+        width: 19px;
+        height: 19px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 22px;
+
+        &-li {
+            background-image: url(../assets/Trazado648.svg);
+        }
+
+        &-fb {
+            background-image: url(../assets/Trazado641.svg);
+        }
+
+        &-ig {
+            background-image: url(../assets/004-instagram.svg);
+        }
+
+        &-yt {
+            background-image: url(../assets/Trazado640.svg);
+        }
+    }
+}
+
+
+@media (max-width: $breakpoint-laptop) {
+    
+    footer {
+        
+        height: auto;
+        padding: 30px;
+        padding-bottom: 15px;
+
+        .logo {
+            display: none;
+        }
+
+        section {
+            flex-direction: row;
+        }
+    }
+
+    .footer-top {
+
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0px;
+        margin: 0px;
+        padding: 0px 24px;
+        width: 50%;
+        border-right: 1px solid $bg-color;
+
+        li {
+            height: auto;
+            width: auto;
+            min-height: 30px;
+            color: red;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+        }
+
+        a {
+            text-align: start;
+        }
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 50%;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 30px;
+
+        div {
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            input {
+                margin-bottom: 8px;
+            }
+
+            button {
+                margin-top: 24px;
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .social-networks {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+
+        .icon {
+            margin: 0;
+        }
+    }
+}
+
+
+@media ( max-width: $breakpoint-tablet ) {
+    
+    footer {
+        section {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }  
+
+    .footer-top, .footer-bottom {
+        width: 100%;
+        border: none;
+    }
+
+    .social-networks {
+        padding-bottom: 24px;
+        border-bottom: 1px solid $bg-color;
+    }
+
+    .footer-top {
+        padding: 24px 0px 8px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

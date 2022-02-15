@@ -1,0 +1,10 @@
+main {
+    display: flex;
+}
+
+@media (max-width: $breakpoint-laptop) {
+    
+    main {
+        flex-direction: column-reverse;
+    }
+}

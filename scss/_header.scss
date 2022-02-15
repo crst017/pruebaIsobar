@@ -1,0 +1,152 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+
+    > * {
+        padding-left: 56px;
+        padding-right: 16px;
+    }
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.header-top {
+
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+        width: 160px;
+
+        span:nth-child(1) {
+            margin-right: 56px;
+        }
+        
+        span:nth-child(2) {
+            font-weight: 400;
+        }
+    }
+
+    &-right a {
+
+        margin-right: 70px;
+
+        &::before {
+            content: url(../assets/Grupo14.svg);
+            width: 21px;
+            height: 14px;
+            margin-right: 11px;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    &-right span::after {
+        content: url(../assets/Trazado25.svg);
+        margin-left: 22px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+nav {
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    box-shadow: 0px 3px 6px $shadow-nav;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 71px;
+        width: 15px;
+        height: 15px;
+        background-color: $white;
+        transform: translateY(-50%) rotateZ(45deg);
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-left: 55px;
+            position: relative;
+
+            &:nth-last-child(1) {
+                margin-right: 16px;
+            }
+
+            &:hover::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: calc(50% - 8px);
+                width: 16px;
+                border-bottom: 2px solid $li-underline;
+            }
+        }
+    }
+}
+
+@media ( max-width: $breakpoint-tablet) {
+    
+    header > * {
+        padding: 0px;
+    }
+    
+    .header-top {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .header-top-right {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 30px;
+        border-bottom: 1px solid $li-underline;
+        width: 100%;
+
+        a {
+            margin: 0px;
+        }
+    }
+
+    .header-top-left {
+        padding: 14px 57px;
+        width: 100%;
+    }
+
+    nav {
+        height: auto;
+        padding: 14px 57px;
+
+        ul {
+            flex-direction: column;
+            align-items: flex-end;
+
+            li {
+                height: 28px;
+                margin: 0px;
+                display: flex;
+                align-items: center;
+
+                &:nth-last-child(1) {
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+

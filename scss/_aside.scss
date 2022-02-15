@@ -1,0 +1,109 @@
+aside {
+    width: 120px;
+    box-shadow: -6px 3px 6px $shadow-aside;
+    background-color: $bg-aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    div {
+        height: 100px;
+    }
+
+    .arrow {
+        width: 34px;
+        height: 34px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $li-underline;
+        position: relative;
+        cursor: pointer;
+
+        &.up::before {
+            content: url(../assets/Grupo376.svg);
+            position: absolute;
+            top: calc( 50% - 6px);
+            left: calc( 50% - 8px);
+        }
+
+        &.down::before {
+            content: url(../assets/Grupo546.svg);
+            position: absolute;
+            top: calc( 50% - 6px);
+            left: calc( 50% - 8px);
+        }
+    }
+}
+
+.aside-buttons {
+    border-bottom: 1px solid $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+
+    span {
+        cursor: pointer;
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: $breakpoint-laptop) {
+    
+    aside {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+
+        .arrow.up, .arrow.down {
+            transform: rotate(-90deg);
+        }
+    }
+
+    .aside-buttons {
+        width: 16%;
+    }
+}
+
+@media ( max-width: $breakpoint-tablet) {
+
+    aside {
+
+        .arrow.up, .arrow.down {
+            background-color: $bg-aside;
+            width: auto;
+        }
+
+        .arrow.up::before {
+            content: url(../assets/Grupo427.svg);
+            top: 0;
+        }
+
+        .arrow.down::before {
+            content: url(../assets/Grupo427.svg);
+            transform: rotateZ(180deg);
+            bottom: 0;
+        }
+    }
+
+    .aside-buttons {
+        height: 120px;
+        width: auto;
+        margin: 0 10px;
+    }
+}
+
+

@@ -1,0 +1,295 @@
+.card {
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 24px;
+    cursor: pointer;
+
+    & > * {
+        cursor: pointer;
+    }
+
+    span {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        position: absolute;
+    }
+
+    button {
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        min-width: 100px;
+        max-width: 155px;
+        width: 50%;
+        color: $li-underline;
+        background-color: $white;
+        border: 1px solid $li-underline;
+        position: absolute;
+    }
+
+    .arrow {
+        box-shadow: 0px 8px 6px #00000014;
+        width: 34px;
+        height: 34px;
+        border-radius: 50px;
+        background-color: $white;
+        position: absolute;
+        top: calc( 50% - 17px);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &-left {
+            background-image: url(../assets/Grupo427.svg);
+            transform: rotateZ(-90deg);
+        }
+
+        &-right {
+            right: 24px;
+            background-image: url(../assets/Grupo427.svg);
+            transform: rotateZ(90deg);
+        }
+    }
+}
+
+.cards-container {
+    padding: 12px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 368px 368px; 
+    gap: 12px 12px; 
+    grid-template-areas: 
+      "a b c c"
+      "d e f g"; 
+    flex-grow: 1;
+}
+
+.a { 
+    grid-area: a;
+    background-image: url(../assets/tarjeta.png);
+
+    span {
+        color: $white;
+        bottom: 65px;
+        max-width: 120px;
+    }
+}
+
+.b { 
+    grid-area: b; 
+    background-image: url(../assets/combreror.png);
+
+    span {
+        color: $font-color;
+    }
+
+    button {
+        bottom: 40px;
+    }
+}
+
+
+.c {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 12px 12px; 
+    grid-template-areas: 
+        "c1 c1 c1"
+        "c2 c3 c3"; 
+    grid-area: c;
+    
+    .c1 { 
+        grid-area: c1;
+        background-image: url(../assets/608x184.png);
+        
+        button {
+            right: 60px;
+            bottom: 28px;
+        }
+    }
+
+    .c2 { 
+        grid-area: c2;
+        background-color: #5EC215;
+
+        &::before {
+            content: url(../assets/Grupo621.svg);
+            width: 24px;
+            height: 31px;
+        }
+
+        span {
+            color: white;
+            max-width: 140px;
+            top: 60px;
+            left: 24px;
+        }
+    }
+
+    .c3 { 
+        grid-area: c3; 
+        background-image: url(../assets/402x170.png);
+
+        .text {   
+            max-width: 170px;
+            top: 86px;
+            left: 45%;
+            font-size: 1.2rem;
+        }
+
+        a {
+            position: absolute;
+            color: $li-underline;
+            text-decoration: underline $li-underline;
+            left: 45%;
+            top: 130px;
+            font-size: 1.1rem;
+
+            &::after {
+                content: url(../assets/Grupo505.svg);
+                position: absolute;
+                top: 1px;
+                right: -30px;
+            }
+        }
+    }
+}
+
+.d { 
+    grid-area: d; 
+    background-image: url(../assets/perritos.png);
+
+    span {
+        max-width: 160px;
+        top: 24px;
+        left: 24px;
+    }
+
+    button {
+        bottom: 24px;
+        background: transparent;
+    }
+}
+
+.e {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 12px 12px; 
+    grid-template-areas: 
+        "e1"
+        "e2"; 
+    grid-area: e;
+    
+    button {
+        bottom: 24px;
+    }
+
+    .e1 { 
+        grid-area: e1; 
+        background-image: url(../assets/promo299x179.png);
+    }
+
+    .e2 { 
+        grid-area: e2; 
+        background-image: url(../assets/promo299x179-2.png
+        );
+    }
+}
+
+.f { 
+    grid-area: f; 
+    background-image: url(../assets/tarjeta-pareja.png);
+
+    span {
+        margin-bottom: 30px;
+        position: static;
+        display: block;
+        max-width: 240px;
+    }
+
+    p {
+        position: relative;
+        font-size: 1.4rem;
+        max-width: 200px;
+    }
+
+    button {
+        bottom: 24px;
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+    }
+}
+
+.g { 
+    grid-area: g; 
+    background-image: url(../assets/fondo-rojo.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        color: $white;
+    }
+}
+
+@media ( max-width: $breakpoint-laptop ) {
+    
+    .cards-container {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: repeat( 4, 300px);
+        gap: 12px 12px; 
+        grid-template-areas: 
+            "a b"
+            "c c"
+            "d e"
+            "f g"; 
+        flex-grow: 1;
+    }
+
+    .c {
+        .c2 {
+            span {
+                max-width: 150px;
+                font-size: 2rem;
+            }
+        }
+        .c3 {
+            .text {
+                top: 50%;
+            }
+            a {
+                top: 80%
+            }
+            
+        }
+    }
+}
+
+@media ( max-width: $breakpoint-tablet ) {
+
+    .c {
+        .c2 {
+            span {
+                max-width: 150px;
+                font-size: 1.7rem;
+            }
+        }
+        .c3 {
+            .text {
+                left: 40%;
+                top: 46%;
+                max-width: 100px;
+            }
+            a { 
+                left: 40%;
+                top: 80%
+            }   
+        }
+    }
+}
