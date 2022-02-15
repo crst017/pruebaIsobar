@@ -32,18 +32,19 @@ header {
             font-weight: 400;
         }
     }
-
+    
     &-right a {
 
         margin-right: 70px;
+        position: relative;
+        padding-left: 32px;
 
         &::before {
             content: url(../assets/Grupo14.svg);
             width: 21px;
             height: 14px;
-            margin-right: 11px;
-            position: relative;
-            top: 2px;
+            position: absolute;
+            left: 0px;
         }
     }
 
@@ -51,7 +52,7 @@ header {
         content: url(../assets/Trazado25.svg);
         margin-left: 22px;
         width: 15px;
-        height: 15px;
+        height: 14px;
     }
 }
 

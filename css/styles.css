@@ -93,22 +93,23 @@ header span {
 
 .header-top-right a {
   margin-right: 70px;
+  position: relative;
+  padding-left: 32px;
 }
 
 .header-top-right a::before {
   content: url(../assets/Grupo14.svg);
   width: 21px;
   height: 14px;
-  margin-right: 11px;
-  position: relative;
-  top: 2px;
+  position: absolute;
+  left: 0px;
 }
 
 .header-top-right span::after {
   content: url(../assets/Trazado25.svg);
   margin-left: 22px;
   width: 15px;
-  height: 15px;
+  height: 14px;
 }
 
 nav {
