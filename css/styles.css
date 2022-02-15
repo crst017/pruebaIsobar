@@ -230,6 +230,26 @@ nav ul li:hover::after {
   }
 }
 
+@media (max-width: 425px) {
+  .header-top-right {
+    padding: 14px 18px;
+  }
+  .header-top-right a {
+    padding-left: 32px;
+  }
+  .header-top-right a::before {
+    content: url(../assets/Grupo14.svg);
+    width: 21px;
+    height: 14px;
+    position: absolute;
+    left: 0px;
+  }
+  .header-top-right span::after {
+    content: url(../assets/Trazado25.svg);
+    margin-left: 12px;
+  }
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
