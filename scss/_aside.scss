@@ -106,4 +106,15 @@ aside {
     }
 }
 
+@media ( max-width: $breakpoint-mobile) {
+
+    .aside-buttons:nth-of-type(1) {
+        display: none;
+    }
+
+    .aside-buttons:nth-last-of-type(1) {
+        display: none;
+    }
+}
+
 

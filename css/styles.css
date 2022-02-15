@@ -564,6 +564,33 @@ main {
   }
 }
 
+@media (max-width: 425px) {
+  .card .arrow-left {
+    left: 12px;
+  }
+  .card .arrow-right {
+    position: absolute;
+    right: 12px;
+  }
+  .c .c3 .text {
+    left: 35%;
+    max-width: 100px;
+  }
+  .c .c3 a {
+    left: 35%;
+    top: 80%;
+  }
+  .d span, .f span, .g span {
+    font-size: 2.2rem;
+  }
+  .d p, .f p, .g p {
+    font-size: 1.3rem;
+  }
+  .f span {
+    margin-bottom: 18px;
+  }
+}
+
 aside {
   width: 120px;
   -webkit-box-shadow: -6px 3px 6px #00000007;
@@ -683,6 +710,15 @@ aside .arrow.down::before {
     height: 120px;
     width: auto;
     margin: 0 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .aside-buttons:nth-of-type(1) {
+    display: none;
+  }
+  .aside-buttons:nth-last-of-type(1) {
+    display: none;
   }
 }
 
