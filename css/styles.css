@@ -33,6 +33,7 @@ button {
   height: 40px;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 #swal2-title {
@@ -79,7 +80,7 @@ header span {
 }
 
 .header-top-left {
-  width: 160px;
+  width: auto;
 }
 
 .header-top-left span:nth-child(1) {
