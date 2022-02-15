@@ -14,7 +14,7 @@ const Header = () => {
             </div>
         </div>
         <nav>
-            <img src="./assets/Componente2–1.svg" alt="logo">
+            <img src="./assets/Componente21.svg" alt="logo">
             <ul>
                 <li>DISFRUTA</li>
                 <li>DÓNDE PAGARLA</li>
