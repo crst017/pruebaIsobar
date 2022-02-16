@@ -575,36 +575,36 @@ main {
     font-size: 1.7rem;
   }
   .c .c3 .text {
-    left: 40%;
+    left: 42%;
     top: 46%;
-    max-width: 100px;
+    max-width: 120px;
   }
   .c .c3 a {
-    left: 40%;
+    left: 42%;
     top: 80%;
   }
 }
 
 @media (max-width: 425px) {
   .card .arrow-left {
-    left: 12px;
+    left: 8px;
   }
   .card .arrow-right {
     position: absolute;
-    right: 12px;
+    right: 8px;
   }
   .c .c2 span {
     font-size: 1.7rem;
   }
   .c .c3 .text {
-    left: 33%;
-    top: 48%;
+    left: 38%;
+    top: 52%;
     font-size: 1.1rem;
     max-width: 120px;
   }
   .c .c3 a {
-    left: 33%;
-    top: 80%;
+    left: 38%;
+    top: 82%;
   }
   .d span, .f span, .g span {
     font-size: 2.2rem;

@@ -282,12 +282,12 @@
         }
         .c3 {
             .text {
-                left: 40%;
+                left: 42%;
                 top: 46%;
-                max-width: 100px;
+                max-width: 120px;
             }
             a { 
-                left: 40%;
+                left: 42%;
                 top: 80%
             }   
         }
@@ -299,12 +299,12 @@
     .card .arrow {
 
         &-left {
-            left: 12px;
+            left: 8px;
         }
 
         &-right {
             position: absolute;
-            right: 12px;
+            right: 8px;
         }
     }
 
@@ -317,14 +317,14 @@
         }
         .c3 {
             .text {
-                left: 33%;
-                top: 48%;
+                left: 38%;
+                top: 52%;
                 font-size: 1.1rem;
                 max-width: 120px;
             }
             a { 
-                left: 33%;
-                top: 80%
+                left: 38%;
+                top: 82%
             }   
         }
     }
